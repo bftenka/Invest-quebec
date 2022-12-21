@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>CRIQ - Entretien</title>
+	<link rel="shortcut icon" href="files/favicon.ico">
+	<style>
+		@font-face {
+			font-family: 'GT Walsheim';
+			src: local(''),
+			url('files/font/gt-walsheim/gt-walsheim-pro-bold-webfont.woff2') format('woff2'), 
+			url('files/font/gt-walsheim/gt-walsheim-pro-bold-webfont.woff') format('woff');
+			font-weight: 700;
+			font-style: normal;
+			font-display: swap;
+		}
+
+		@font-face {
+			font-family: 'GT Walsheim';
+			src: local(''),
+			url('files/font/gt-walsheim/gt-walsheim-pro-regular-webfont.woff2') format('woff2'), 
+			url('files/font/gt-walsheim/gt-walsheim-pro-regular-webfont.woff') format('woff');
+			font-weight: 400;
+			font-style: normal;
+			font-display: swap;
+		}
+
+		@font-face {
+			font-family: 'GT Walsheim';
+			src: local(''),
+			url('files/font/gt-walsheim/gt-walsheim-pro-medium-webfont.woff2') format('woff2'), 
+			url('files/font/gt-walsheim/gt-walsheim-pro-medium-webfont.woff') format('woff');
+			font-weight: 500;
+			font-style: normal;
+			font-display: swap;
+		}
+		
+		*{box-sizing: border-box;}
+		
+		body{background: #14286e; font-family: 'GT Walsheim', sans-serif; font-weight: 400; margin: 0; height: 100vh; display: flex; align-items: center;}
+		.contenu{max-width: 1280px; margin: 0 auto; padding: 50px; color: #fff; text-align: center;}
+		.contenu h1{font-size: 40px; line-height: 45px; margin-bottom: 50px; margin-top: 50px; font-weight: 700;}
+		.decouvrez{font-size: 30px; line-height: 35px; margin-bottom: 20px;}
+		.contenu a{display: inline-block; padding: 15px 45px; position: relative; background: #ee3042; border: 2px solid #ee3042; overflow: hidden; color: #fff; text-decoration: none; font-weight: 500; border-radius: 30px;}
+		.contenu a span{position: relative; z-index: 2;}
+		.contenu a:before, .contenu a:before{content: ' '; background: #14286e; position: absolute; z-index: 1; top: -1px; left: 100%; right: -1px; bottom: -1px; border-radius: 30px; -moz-transition:all 500ms;-o-transition:all 500ms;-webkit-transition:all 500ms;transition:all 500ms;}
+		.contenu a:hover:before, .contenu a:focus:before{left: -1px;}
+		
+		.logo_criq{width: 280px; margin: 0 auto;}
+		
+		@media only screen and (max-width: 640px){
+			.contenu{padding: 30px 20px;}
+			.contenu h1{font-size: 30px; line-height: 35px; margin-bottom: 30px; margin-top: 30px;}
+			.decouvrez{font-size: 20px; line-height: 25px; margin-bottom: 15px;}
+			.contenu a{padding: 15px 30px; border-radius: 30px;}
+		}
+		@media only screen and (min-width: 641px) and (max-width: 1024px){
+			.contenu{padding: 50px 40px;}
+			.contenu h1{font-size: 35px; line-height: 40px;}
+			.decouvrez{font-size: 25px; line-height: 30px;}
+			.contenu a{padding: 15px 45px; border-radius: 30px;}
+		}
+	</style>
+</head>
+<body>
+	<div class="contenu">
+		<img src="logo-criq-blanc.svg" class="logo_criq">
+
+		<h1><br>Ce site est en entretien du<br><br>23 décembre 20h au 27 décembre 8h</span><br><span>et du<br>30 décembre 20h au 3 janvier 8h.</span><br><br><span>Merci de votre collaboration.</span></h1>
+		<!--<div class="decouvrez">Découvrez-le&nbsp;:</div>-->
+
+		<a href="https://www.investquebec-criq.com/"><span>investquebec-criq.com</span></a>
+	</div>
+</body>
+</html>
